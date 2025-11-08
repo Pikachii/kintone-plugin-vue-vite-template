@@ -1,0 +1,38 @@
+{
+  "manifest_version": 1,
+  "version": 1,
+  "type": "APP",
+  "name": {
+    "ja": "サンプルプラグイン",
+    "en": "Sample Plugin"
+  },
+  "description": {
+    "ja": "Vue 3 + Vite で作成されたサンプルプラグイン",
+    "en": "Sample plugin created with Vue 3 + Vite"
+  },
+  "icon": "icon.png",
+  "desktop": {
+    "js": [
+      "desktop.js"
+    ],
+    "css": []
+  },
+  "mobile": {
+    "js": [
+      "mobile.js"
+    ],
+    "css": []
+  },
+  "config": {
+    "html": "config.html",
+    "js": [
+      "config.js"
+    ],
+    "css": [
+      "config.css"
+    ],
+    "required_params": []
+  }
+}
+
+
