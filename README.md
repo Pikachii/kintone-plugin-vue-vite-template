@@ -175,6 +175,10 @@ MIT
 
 ## 参考資料
 
+- [USAGE.md](./USAGE.md) - 詳細な使用方法
+- [ARCHITECTURE.md](./ARCHITECTURE.md) - アーキテクチャ詳細とダイアグラム
+- [EXAMPLES.md](./EXAMPLES.md) - 実装例とサンプルコード
+- [CONTRIBUTING.md](./CONTRIBUTING.md) - 貢献ガイドライン
 - [kintone プラグイン開発ガイド](https://cybozu.dev/ja/kintone/tips/development/plugins/development-plugin/development-kintone-plugin/)
 - [Vue 3 ドキュメント](https://ja.vuejs.org/)
 - [Vite ドキュメント](https://ja.vitejs.dev/)
