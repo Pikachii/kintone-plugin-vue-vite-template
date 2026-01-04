@@ -40,13 +40,3 @@ jobs:
 
     - name: Build
       run: npm run build
-
-    - name: Package plugin
-      run: npm run package
-
-    - name: Upload plugin artifact
-      uses: actions/upload-artifact@v4
-      if: matrix.node-version == '24.x'
-      with:
-        name: plugin-package
-        path: plugin.zip
