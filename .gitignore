@@ -1,0 +1,15 @@
+node_modules
+dist
+*.local
+.DS_Store
+coverage
+plugin.zip
+.env.local
+.env
+.kintone-plugin-uploader.json
+.kintone-plugin-uploader.local.json
+*.tsbuildinfo
+
+plugin/js/
+
+private.ppk

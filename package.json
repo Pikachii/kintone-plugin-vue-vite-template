@@ -1,0 +1,50 @@
+{
+  "name": "kintone-plugin-vue-vite-template",
+  "version": "1.0.0",
+  "description": "A maintainable kintone plugin template using Vue 3 and Vite",
+  "type": "module",
+  "scripts": {
+    "dev": "vite",
+    "build": "vite build --config vite.config.config.ts && vite build --config vite.desktop.config.ts && vite build --config vite.mobile.config.ts",
+    "preview": "vite preview",
+    "test": "vitest run --passWithNoTests",
+    "test:ui": "vitest --ui",
+    "test:coverage": "vitest --coverage",
+    "lint": "eslint . --ext .vue,.js,.jsx,.cjs,.mjs,.ts,.tsx,.cts,.mts --fix --ignore-pattern .gitignore",
+    "type-check": "vue-tsc --noEmit",
+    "package:init": "kintone-plugin-packer --out dist/plugin.zip plugin",
+    "package": "kintone-plugin-packer --ppk private.ppk --out dist/plugin.zip plugin",
+    "upload": "node scripts/upload-plugin.js",
+    "start:init": "npm run build && npm run package:init && npm run upload",
+    "start": "npm run build && npm run package && npm run upload"
+  },
+  "dependencies": {
+    "vue": "^3.5.26"
+  },
+  "devDependencies": {
+    "@eslint/js": "^9.39.2",
+    "@kintone/plugin-packer": "^9.0.0",
+    "@kintone/plugin-uploader": "^10.0.0",
+    "@types/node": "^24.0.0",
+    "@typescript-eslint/eslint-plugin": "^8.51.0",
+    "@typescript-eslint/parser": "^8.51.0",
+    "@vitejs/plugin-vue": "^6.0.3",
+    "@vitest/coverage-v8": "^4.0.16",
+    "@vitest/ui": "^4.0.16",
+    "@vue/test-utils": "^2.4.6",
+    "@vue/tsconfig": "^0.8.1",
+    "archiver": "^7.0.1",
+    "eslint": "^9.39.2",
+    "eslint-config-prettier": "^10.1.8",
+    "eslint-plugin-vue": "^10.6.2",
+    "form-data": "^4.0.5",
+    "globals": "^17.0.0",
+    "jsdom": "^27.4.0",
+    "node-fetch": "^3.3.2",
+    "typescript": "^5.9.3",
+    "vite": "^7.3.0",
+    "vitest": "^4.0.16",
+    "vue-eslint-parser": "^10.2.0",
+    "vue-tsc": "^3.2.1"
+  }
+}
