@@ -12,19 +12,20 @@ const rootDir = path.resolve(__dirname, '..')
  * Following the kintone plugin format specification
  */
 async function packagePlugin() {
+  const pluginDir = path.join(rootDir, 'plugin')
   const distDir = path.join(rootDir, 'dist')
-  const outputPath = path.join(rootDir, 'plugin.zip')
+  const outputPath = path.join(distDir, 'plugin.zip')
 
   // Check if dist directory exists
-  if (!fs.existsSync(distDir)) {
-    console.error('Error: dist directory not found. Please run "npm run build" first.')
+  if (!fs.existsSync(pluginDir)) {
+    console.error('Error: plugin directory not found. Please run "npm run build" first.')
     process.exit(1)
   }
 
   // Check if manifest.json exists in dist
-  const distManifestPath = path.join(distDir, 'manifest.json')
+  const distManifestPath = path.join(pluginDir, 'manifest.json')
   if (!fs.existsSync(distManifestPath)) {
-    console.error('Error: manifest.json not found in dist. Please run "npm run build" first.')
+    console.error('Error: manifest.json not found in plugin. Please run "npm run build" first.')
     process.exit(1)
   }
 

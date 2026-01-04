@@ -8,7 +8,7 @@ export default defineConfig({
     target: "esnext",
     cssCodeSplit: false,
     rollupOptions: {
-      input: path.resolve(__dirname, "src/desktop/main.ts"),
+      input: path.resolve(__dirname, "src/entries/desktop/main.ts"),
       plugins: [vue()],
       output: {
         inlineDynamicImports: true,

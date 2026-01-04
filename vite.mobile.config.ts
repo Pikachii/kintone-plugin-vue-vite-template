@@ -8,7 +8,7 @@ export default defineConfig({
     target: "esnext",
     cssCodeSplit: false,
     rollupOptions: {
-      input: path.resolve(__dirname, "src/mobile/main.ts"),
+      input: path.resolve(__dirname, "src/entries/mobile/main.ts"),
       plugins: [vue()],
       output: {
         inlineDynamicImports: true,

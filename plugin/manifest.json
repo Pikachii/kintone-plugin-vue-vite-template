@@ -10,7 +10,7 @@
     "ja": "Vue 3 + Vite で作成されたサンプルプラグイン",
     "en": "Sample plugin created with Vue 3 + Vite"
   },
-  "icon": "icon.png",
+  "icon": "image/icon.png",
   "desktop": {
     "js": [
       "desktop/index.js"
