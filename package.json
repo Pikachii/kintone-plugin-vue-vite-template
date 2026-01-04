@@ -7,7 +7,7 @@
     "dev": "vite",
     "build": "vite build --config vite.config.config.ts && vite build --config vite.desktop.config.ts && vite build --config vite.mobile.config.ts",
     "preview": "vite preview",
-    "test": "vitest",
+    "test": "vitest run --passWithNoTests",
     "test:ui": "vitest --ui",
     "test:coverage": "vitest --coverage",
     "lint": "eslint . --ext .vue,.js,.jsx,.cjs,.mjs,.ts,.tsx,.cts,.mts --fix --ignore-pattern .gitignore",
