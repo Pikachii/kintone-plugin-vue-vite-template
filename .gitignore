@@ -6,6 +6,10 @@ coverage
 plugin.zip
 .env.local
 .env
+.kintone-plugin-uploader.json
+.kintone-plugin-uploader.local.json
 *.tsbuildinfo
 
 plugin/js/
+
+private.ppk

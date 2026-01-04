@@ -10,23 +10,27 @@
     "ja": "Vue 3 + Vite で作成されたサンプルプラグイン",
     "en": "Sample plugin created with Vue 3 + Vite"
   },
+  "homepage_url": {
+    "ja": "https://example.com/sample-plugin",
+    "en": "https://example.com/sample-plugin"
+  },
   "icon": "image/icon.png",
   "desktop": {
     "js": [
-      "desktop/index.js"
+      "js/desktop/index.js"
     ],
     "css": []
   },
   "mobile": {
     "js": [
-      "mobile/index.js"
+      "js/mobile/index.js"
     ],
     "css": []
   },
   "config": {
-    "html": "config.html",
+    "html": "html/config.html",
     "js": [
-      "config/index.js"
+      "js/config/index.js"
     ],
     "css": [],
     "required_params": []
